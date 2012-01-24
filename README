@@ -1,0 +1,8 @@
+Ich schreibe hier meine Semesterarbeit über den CMB und seine Anisotropien.
+Ist nur eine kleine popularwissenschaftliche Arbeit, nix großartiges.
+
+Kompilieren einfach mit pdflatex:
+ pdflatex -interaction=nonstopmode main.tex
+Dann bibtex (gibt's noch nicht) kompilieren:
+ bibtex main.aux
+und dann noch 2x pdflatex wie oben...
