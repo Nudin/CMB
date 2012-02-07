@@ -6,6 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[german]{babel}
 \usepackage{amssymb}
+\usepackage{graphicx}
 
 \newcommand{\degree}{$^\circ$}
 
@@ -61,10 +62,16 @@ Durch die Streuung ändert sich die Energie der Photonen ein wenig: sie haben na
 \end{itemize}
 
 Darüber hinaus wird der kosmische Mikrowellenhintergund mit zahlreichen Quellen im Vordergrund überlagert. Diese werden manchmal als tertiäre Anisotropien bezeichnet.
-%Beispiele
-%rausrechnen
+Weit entfernte Galaxien, die einen Großteil ihres Lichts im Infrarotem ausstrahlen, erscheinen als Punktquellen im CMB, da ihr Licht durch die Rotverschiebung in den Mikrowellenbereich verschoben wird. Auch die Milchstraße, sowie Körper in unserem Sonnensystem strahlt im Mikrowellenbereich.
+Um diese Vordergrundobjekte, sowie den Sunyaev-Zeldovich-Effekt aus den Daten heraus rechnen zu können (und dabei möglicherweise auch zahlreiche neue Objekte im Universum zu finden), muss man die Mikrowellenstrahlung bei möglichst vielen verschiedenen Frequenzen vermessen, da sie im Gegensatz zum CMB kein reinen Schwarzkörperspektrum haben.\cite{A+R}
 
 \section{Das Leistungsspektrum}
+\begin{figure}
+\center
+\includegraphics[scale=1]{pow}
+\caption{Mögliches Leistungsspektrum des CMB. Auf der Abzisse ist die Winkelskala in Bogenminuten angegeben -- alternativ wird hier auch oft Ordnung des Multipols angegeben. Die Ordinate ist in willkürlichen Einheiten angegeben. Quelle: \cite{A+R}}
+\label{pow}
+\end{figure}
 Die unterschiedlichen Ursachen der primären Anisotropie tragen auf unterschiedlich großen Skalen bei.
 
 Hat man nun die Anisotropien des CMB gemessen und von Vordergrundquellen und sekundären Effekten bereinigt, betrachtet man die Stärke Anisotopien in Abhängigkeit ihrer räumlichen Größe.
@@ -89,6 +96,12 @@ Aufgrund des endlichen Alters der Universums und der Endlichkeit der Lichtgeschw
 \end{itemize}
 
 \section{Kosmologische Parameter im CMB}
+\begin{figure}
+\center
+\includegraphics[scale=1]{cmbvar}
+\caption{Vorhersage des Leistungsspektrum des kosmischen Hintergrunds bei Variation der Materiedichten. In allen Fällen ist das Referenzmodell beschrieben durch $\Omega_m + \Omega_\Lambda = 1$,$\Omega_\Lambda = 0.65$, $\Omega_b h^2 = 0.02$, $\Omega_m h^2 = 0.147$ und einer Steigung des primordialen Dichtespektrums n = 1, entsprechend dem Harrison–Zeldovich-Spektrum. Quelle: \cite{Schneider}}
+\label{cmbvar}
+\end{figure}
 Die genaue Form des auf den besprochenen Effekten berechneten Leistungspektrums -- also die Stärke und Lage der Maxima und Minima ihre Abstände zueinander sowie die Stärke der Silk-Dämpfung und des Sachs-Wolfe-Effekts -- hängen teils äußerst empfindlich von den kosmologischen Parametern ab. Vermisst man also den Mikrowellenhintergrund äußerst präzise, so kann man aus dem Leistungsspektrum die kosmologischen Parameter äußerst präzise bestimmen.
 %auslistung der Parameter - oder oben, oder unten?
 Wir wollen dies an zwei Beispielen verdeutlichen:
@@ -97,15 +110,18 @@ Die Stärke und die Frequenz der akustischen Schwingungen wird durch die Stärke
 
 Die Größten Materiewolken die noch zu schwingen begonnen haben, hatten eine Ausdehnung die der Schallhorizontlänge entspricht. Daher definiert der Schallhorizont den Grundton des Mikrowellenhintergrunds, also die Lage des ersten Dopplerpeaks. Da wir den Zeitpunkt der Rekombination und die Schallgeschwindigkeit kennen, können wir die Schallhorizontlänge berechnen. Die berechnete Länge ist mit der Lage des ersten Maximums durch die Krümmung des Raumes verknüpft, denn eine bekannte Länge erscheint aus einer bekannten Entfernung unter einem unterschiedlich großem Winkel, je nachdem, ob und wie stark der Raum gekrümmt ist. In einem positiv gekrümmten (sphärischen) Raum erscheint er unter einem größerem Winkel, als in einem negativ gekrümmten (hyperbolischen) Raum. Durch exaktes Vermessen der Lage des ersten Maximums lässt sich also die Krümmung des Universums bestimmen. Diese ist außerdem direkt mit $\Omega_{tot}$ verknüpft.\cite{S+W03} %Omega_{tot} noch erklären
 
+
 \subsection{Erforschung der Anisotropien}\label{Missionen}
 Nach COBE wurden zahlreiche weitere Missionen gestartet um den CMB genauer zu vermessen, darunter auch zwei weitere Satelliten: WMAP und Plank.
 Satelliten sind sind wie bei den meisten Wellenlängen auch bei Mikrowellenteleskopen von Vorteil, da die Atmosphäre Strahlung absorbiert und somit das Bild trübt. Darüber hinaus können sie den kompletten Himmel abmustern und somit 360\degree Ansicht aufnehmen können. Die Auflösung eines Teleskops hängt allgemein von der Öffnung des Teleskops und der Wellenlänge des zu detektierenden ab. Da die Größe eines Satelliten technisch stark begrenzt ist, können sie nicht die selbe Auflösung wie ein bodengestütztes Teleskop erreichen. Aufgrund der großen Wellenlänge der Hintergrundstrahlung ist die Auflösung von Mikrowellenteleskopen ohnehin relativ gering.
 
 Die vielen anderen Experimente wurden entweder mit Ballonen in der Stratosphäre oder zumindest an kalten und/oder hochgelegenen Orten wie dem Südpol durchgeführt, da dort die Effekte der Atmosphäre schwächer sind. Sie haben den Vorteil einer vergleichsweise hohen Winkelauflösung.
-%Besonders erfolgreich waren die Ballonexperimente BOOMERanG und MAXIMA.
 
 Die 1989 gestattete Sonde COBE hatte eine Winkelauflösung von nur sieben Grad (420 Bogenminuten) und war somit nicht in der Lage die akustischen Schwingungen zu detektieren! Um die damals noch unsichere Existenz der akustischen Schwingungen zu detektieren und damit die kosmologischen Parameter zu bestimmen, wurden verschiedene erdgebundene Missionen gestartet. Den Ballon-Experimenten BOOMERanG und MAXIMA, sowie dem am Südpol stationiertem Projekt Dasi gelangen unabhängig von einander den ersten Dopplerpeak genau und den zweiten ansatzweise zu vermessen. Um die Genauigkeit der Vermessung des Leistungsspektrums zu erhöhen musste man nun erneut Satellitenmissionen starten, da Land- und Ballonexperimente durch ihr begrenztes Sichtfeld beziehungsweise durch ihre begrenzte Flugdauer nur einen kleinen Teil des Himmels aufnehmen können.
-Der Satellit WMAP (früher: MAP oder auch Explorer 80) kartografierte von 2001 bis 2010 den CMB mit einer Winkelauflösung von etwa 15 Bodenminuten. 
+Der Satellit WMAP (früher: MAP oder auch Explorer 80) kartografierte von 2001 bis 2010 den CMB mit einer Winkelauflösung von 53 bis 13 Bodenminuten.\cite{PJ1} Es maß auf den Frequenzen 22, 30, 40, 60 und 90 GHz.
+Die europäische Nachfolgemission, der Satellit Planck wurde 2009 ins Weltall geschossen und beobachtete dort bis Anfang 2012 mit zwei Geräten auf neun verschieden Frequenzen zwischen 25 und 1000 GHz, seit dem planmäßigen zuendegehen des Kühlmittels am 16. Januar 2012 kann nur noch das "Low Frequency Instrument" (LFI) weiter-betrieben werden\cite{PJ1}\cite{pm}.
+Planck konnte anstatt der vorgesehenen zwei, sogar fünf komplette Himmelsdurchmusterungen aufnehmen und hatte dabei hat Winkelauflösungen von bis zu 4 Bogenminuten. % und kann damit …
+Dank der neun verschiedenen Frequenzen kann Planck Vordergrundquellen besser eliminieren. Die Auswertung der Daten wird Anfang 2013 fertig sein und unsere kosmologischen Weltmodelle entweder mit hoher Genauigkeit bestätigen oder neue Fragen aufwerfen.
 
 \bibliography{lit}{}
 \bibliographystyle{unsrtdin}
