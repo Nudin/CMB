@@ -7,7 +7,24 @@
 \usepackage[german]{babel}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+%    bookmarks=true,
+    pdftoolbar=true,
+    pdfmenubar=true,
+    pdffitwindow=false,
+    pdfstartview={FitH},
+    pdftitle={Der Kosmische Mikrowellenhintergrund und seine Anisotropien},
+    pdfauthor={Michael F. Sch\"onitzer},
+    pdfsubject={Der Kosmische Mikrowellenhintergrund},
+    pdfkeywords={CMB} {Mikrowellenhintergrund} {Anisotropien} {Astrophysik},
+    pdfnewwindow=true,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=blue
+}
 
 \newcommand{\degree}{$^\circ$}
 
@@ -70,7 +87,7 @@ Durch die Streuung ändert sich die Energie der Photonen ein wenig: sie haben na
 \end{itemize}
 
 Darüber hinaus wird der kosmische Mikrowellenhintergund mit zahlreichen Quellen im Vordergrund überlagert. Diese werden manchmal als tertiäre Anisotropien bezeichnet.\cite{Tegmark}
-Weit entfernte Galaxien, die einen Großteil ihres Lichts im Infrarotem ausstrahlen, erscheinen als Punktquellen im CMB, da ihr Licht durch die Rotverschiebung in den Mikrowellenbereich verschoben wird. Auch die Milchstraße strahlt im Mikrowellenbereich, ebenso wie mehrere Körper (zum Bsp: Die Sonne, der Mond und die großen Planeten) in unserem Sonnensystem. %welche Körper
+Weit entfernte Galaxien, die einen Großteil ihres Lichts im Infrarotem ausstrahlen, erscheinen als Punktquellen im CMB, da ihr Licht durch die Rotverschiebung in den Mikrowellenbereich verschoben wird. Auch die Milchstraße strahlt im Mikrowellenbereich, ebenso wie mehrere Körper (zum Bsp: Die Sonne, der Mond und die großen Planeten) in unserem Sonnensystem.
 Um diese Vordergrundobjekte sowie den Sunyaev-Zeldovich-Effekt aus den Daten heraus rechnen zu können (und dabei möglicherweise auch zahlreiche neue Objekte im Universum zu finden), muss man die Mikrowellenstrahlung bei möglichst vielen verschiedenen Frequenzen vermessen, da sie im Gegensatz zum CMB kein reines Schwarzkörperspektrum haben.\cite{A+R}
 
 \section{Das Leistungsspektrum}
@@ -103,7 +120,7 @@ Aufgrund des endlichen Alters des Universums und der Endlichkeit der Lichtgeschw
 \end{itemize}
 
 \section{Kosmologische Parameter im CMB}
-\begin{figure}[tbhp]
+\begin{figure}[b!]
 \center
 \includegraphics[scale=0.8]{cmbvar}
 \caption{Vorhersage des Leistungsspektrum des Kosmischen Hintergrunds bei Variation der Materiedichten. In allen Fällen ist das Referenzmodell beschrieben durch $\Omega_m + \Omega_\Lambda = 1$, $\Omega_\Lambda = 0.65$, $\Omega_b h^2 = 0.02$, $\Omega_m h^2 = 0.147$ und einer Steigung des primordialen Dichtespektrums n = 1, entsprechend dem Harrison–Zeldovich-Spektrum. Quelle: \cite{Schneider}}
@@ -129,7 +146,7 @@ Die größten Materiewolken, die noch zu schwingen begonnen haben, hatten eine A
 \section{Erforschung der Anisotropien}\label{Missionen}
 \begin{figure}
 \center
-\includegraphics[scale=1]{mess}
+\includegraphics[scale=0.9]{mess}
 \caption{Die Messwerte der CMB-Anisotropien auf dem Stand von Ende 2002. Links die einzelnen Werte, rechts die gewichteten Mittel und das dazu am besten passende Spektrum. Quelle: \cite{Schneider}}
 \label{mess}
 \end{figure}
@@ -137,7 +154,7 @@ Die größten Materiewolken, die noch zu schwingen begonnen haben, hatten eine A
 \begin{figure}
 \center
 \includegraphics[scale=0.15]{CMB}
-\caption{Vergleich der Karten von COBE, WMAP und Plank (von hinten). Bei der Karte von Planck wurden die Vordergrundobjekte bisher noch nicht herausgerechnet.}
+\caption{Vergleich der Karten von COBE, WMAP und Plank (von hinten nach vorne). Bei der Karte von Planck wurden die Vordergrundobjekte bisher noch nicht herausgerechnet.}
 \label{cmb}
 \end{figure}
 
@@ -148,12 +165,12 @@ Die vielen anderen Experimente wurden entweder mit Ballonen in der Stratosphäre
 
 Die 1989 gestartete Sonde COBE hatte eine Winkelauflösung von nur sieben Grad (420 Bogenminuten) und war somit nicht in der Lage die akustischen Schwingungen zu detektieren!\cite{S+W00} Um die damals noch unsichere Existenz der akustischen Schwingungen nachzuweisen und damit die kosmologischen Parameter zu bestimmen, wurden verschiedene erdgebundene Missionen gestartet. Den Ballon-Experimenten BOOMERanG und MAXIMA, sowie dem am Südpol stationiertem Projekt Dasi gelang unabhängig voneinander, den ersten Dopplerpeak genau und den zweiten ansatzweise zu vermessen.\cite{S+W03} Um die Genauigkeit der Vermessung des Leistungsspektrums zu erhöhen, musste man nun erneut Satellitenmissionen starten, da Land- und Ballonexperimente durch ihr begrenztes Sichtfeld beziehungsweise durch ihre begrenzte Flugdauer nur einen kleinen Teil des Himmels aufnehmen können.
 Der Satellit WMAP (früher: MAP oder auch Explorer 80) kartografierte von 2001 bis 2010 den CMB mit einer Winkelauflösung von 53 bis 13 Bodenminuten.\cite{PJ1} Er maß auf den Frequenzen 22, 30, 40, 60 und 90 GHz.
-Die europäische Nachfolgemission, der Satellit Planck, wurde 2009 ins Weltall geschossen und beobachtete dort bis Anfang 2012 mit zwei Geräten auf neun verschieden Frequenzen zwischen 25 und 1000 GHz, seit dem planmäßigen Zuendegehen des Kühlmittels am 16. Januar 2012 kann nur noch das \glqq Low Frequency Instrument\grqq (LFI) weiter-betrieben werden\cite{PJ1}\cite{pm}.
+Die europäische Nachfolgemission, der Satellit Planck, wurde 2009 ins Weltall geschossen und beobachtete dort bis Anfang 2012 mit zwei Geräten auf neun verschieden Frequenzen zwischen 25 und 1000 GHz, seit dem planmäßigen Zuendegehen des Kühlmittels am 16. Januar 2012 kann nur noch das \glqq Low Frequency Instrument\grqq\  (LFI) weiter-betrieben werden\cite{PJ1}\cite{pm}.
 Planck konnte anstatt der vorgesehenen zwei sogar fünf komplette Himmelsdurchmusterungen aufnehmen und hatte dabei Winkelauflösungen von bis zu 4 Bogenminuten. % und kann damit …
 Dank der neun verschiedenen Frequenzen kann Planck Vordergrundquellen besser eliminieren. Die Auswertung der Daten wird Anfang 2013 fertig sein und unsere kosmologischen Weltmodelle entweder mit hoher Genauigkeit bestätigen oder neue Fragen aufwerfen.
 
 \newpage
 \bibliography{lit}{}
-\bibliographystyle{unsrtdin}
+\bibliographystyle{hplain}
 
 \end{document}
